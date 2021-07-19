@@ -72,8 +72,3 @@ def hello():
 - Git 명령어 - `01_git.md`
 
 
-
-
-
-
-
