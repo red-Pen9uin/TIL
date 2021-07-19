@@ -1,13 +1,15 @@
 # 01. Git
 
-- `git status`: git으로 관리되고 있는 폴더(== Repository, 저장소)의 상태를 보여줌
-
-  - 현재 브랜치, 현재 Working Directory, 현재 Staging Area
-
 - `git init`: 해당 폴더를 Repository로 만들겠다.(== git으로 관리하겠다!)
 
   - 앞으로 해당 폴더의 역사(commit, history)는 git이 관리한다!
   - (github.com) `New Repository` -> Repository 생성
+
+- `rm -rf .git`: .git 디렉토리 강제 제거
+
+- `git status`: git으로 관리되고 있는 폴더(== Repository, 저장소)의 상태를 보여줌
+
+  - 현재 브랜치, 현재 Working Directory, 현재 Staging Area
 
 - `git add`: git으로 관리할 파일들을 추가
 
