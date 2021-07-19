@@ -47,7 +47,7 @@
   - https://code.jquery.com/
   - CDN의 정송량을 위해 minified 버전을 사용한다.
 
-![image-20210714174445338](04_jQuery_tutorial/image-20210714174445338.png)
+![image-20210714174445338](01_jQuery_tutorial/image-20210714174445338.png)
 
 - WebStorm에 jQuery library 를 설치해두면 도움이 된다.
 
