@@ -1,0 +1,6 @@
+def solution(n):
+    answer = ''
+    time = n//2
+    remain = n%2
+    answer = '수박'*time + '수'*remain
+    return answer
