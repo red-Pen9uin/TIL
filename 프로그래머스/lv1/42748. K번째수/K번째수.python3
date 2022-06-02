@@ -1,0 +1,9 @@
+def solution(array, commands):
+    answer = []
+    for now in commands:
+        i, j, k = now[0], now[1], now[2]
+        temp = array[i-1:j]
+        # print(temp)
+        temp.sort()
+        answer.append(temp[k-1])
+    return answer
