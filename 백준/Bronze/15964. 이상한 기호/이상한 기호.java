@@ -6,8 +6,9 @@ public class Main {
 
         int A = scanner.nextInt();
         int B = scanner.nextInt();
+        long result = (A+B)*(A-B);
 
-        System.out.printf("%d", (A+B)*(A-B));
+        System.out.printf("%d", result);
 
     }
 }
