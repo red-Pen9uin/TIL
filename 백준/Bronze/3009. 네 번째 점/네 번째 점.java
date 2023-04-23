@@ -1,32 +1,35 @@
 import java.util.Scanner;
 
 public class Main {
-    static int count(int[] array, int x) {
-        int cnt = 0;
-        for(int i=0; i< array.length; i++) {
-            if(array[i] == x) cnt++;
-        }
-        return cnt;
-    }
-
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
-        int x[] = new int[3];
-        int y[] = new int[3];
+        int x1= scanner.nextInt();
+        int y1= scanner.nextInt();
 
-        for(int i=0; i<x.length; i++) {
-            x[i] = scanner.nextInt();
-            y[i] = scanner.nextInt();
+        int x2= scanner.nextInt();
+        int y2= scanner.nextInt();
+
+        int x3= scanner.nextInt();
+        int y3= scanner.nextInt();
+
+        int x = x1;
+        int y = y1;
+
+        if(x1==x2) {
+            x=x3;
+        }
+        if(x1==x3) {
+            x=x2;
         }
 
-        int answer_x=0, answer_y=0;
-
-        for(int i=0; i<x.length; i++) {
-            if(count(x, x[i]) == 1) answer_x = x[i];
-            if(count(y, y[i]) == 1) answer_y = y[i];
+        if(y1==y2) {
+            y=y3;
         }
-
-        System.out.printf("%d %d", answer_x, answer_y);
+        if(y1==y3) {
+            y=y2;
+        }
+        System.out.println(x+" "+y);
     }
 }
