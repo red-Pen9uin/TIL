@@ -8,26 +8,12 @@ public class Main {
         arr[j] = temp;
     }
 
-    static int partition(int[] arr, int low, int high) {
-        int pivot = arr[high];
-        int i = (low-1);
-
-        for(int j=low; j<=high-1; j++) {
-            if (arr[j] < pivot) {
-                i++;
-                swap(arr, i, j);
+    static void bubblesort(int[] arr, int size) {
+        for(int i=size-1; i>0; i--) {
+            for(int j=0; j<i; j++) {
+                if(arr[j] > arr[j+1])
+                    swap(arr, j, j+1);
             }
-        }
-        swap(arr, i+1, high);
-        return (i+1);
-    }
-
-    static void quicksort(int[] arr, int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
-
-            quicksort(arr, low, pi-1);
-            quicksort(arr, pi+1, high);
         }
     }
 
@@ -42,7 +28,7 @@ public class Main {
                 array[j] = scanner.nextInt();
             }
 
-            quicksort(array, 0, SIZE-1);
+            bubblesort(array, SIZE);
             System.out.printf("%d%n", array[SIZE - 3]);
         }
 
